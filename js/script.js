@@ -9,6 +9,7 @@
         console.log(language);
         displayjobs(language);
         //getyoutubevideo(language);
+        localStorage.setItem("language", JSON.stringify(language));
        
     };
 
@@ -73,13 +74,16 @@
             jobpostDiv.append($("<li>").text(blink));
         
             $("#jobscontainer3").html(jobpostDiv);
-
-            
+            localStorage.setItem("link",JSON.stringify(blink));
         }
+
+
+
 
   
   if (languageButtonsEl){
-    languageButtonsEl.addEventListener('click', buttonClickHandler);   
+    languageButtonsEl.addEventListener('click', buttonClickHandler); 
+     
   };  
 
           
