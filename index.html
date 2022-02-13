@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="html" href="./results.html"/>
+  <title>Hub</title>
+</head>
+
+<body class="flex-column min-100-vh">
+  <header class="title text-uppercase">
+    <h1> Computer Language Hub</h1>
+  </header>
+
+  <main class="flex-row justify-space-between">
+    <div class="container col-12">
+        <section class="hero">
+          <section class="textbottom hero-header text-uppercase">
+            <h2"> The Easiest Way to Find Your Next Development Job</h2>
+          </section>
+        </section>
+ 
+      
+<!-- this is the code for the drop down bar -->
+        <section class="card-dd col-9">
+          <h3 class="card-header text-uppercase">Select language!</h3>
+          <div id="language-buttons">
+            <button class="s-btn" data-language="css">css</button>
+            <button class="s-btn" data-language="javascript">javascript</button>
+            <button class="s-btn" data-language="python">python</button>
+            <button class="s-btn" data-language="c++">c++</button>
+            <button class="s-btn" data-language="c#">c#</button>
+            <button class="s-btn" data-language="swift">swift</button>
+            <button class="s-btn" data-language="java">java</button>
+            <button class="s-btn" data-language="php">php</button>
+          </div>
+        </section>
+
+        <aside class="aside col-3">
+          <h3 class="card-header text-uppercase">Useful Websites </h3>
+          <div id="resource-buttons" class="card-body">
+              <button class="btn" onclick="window.open('https://developer.mozilla.org/en-US/' , '_blank'); return false;">Mozilla</button>
+              <button class="btn" onclick="window.open('https://w3schools.com/' , '_blank'); return false;">w3schools</button>
+              <button class="btn" onclick="window.open('https://stackoverflow.com/' , '_blank'); return false;">StackOverflow</button>
+              <button class="btn" onclick="window.open('https://github.com/' , '_blank'); return false;">GitHub</button>
+
+          </div>
+      </aside>
+
+  <!--end of search by language drop down -->
+  <!--start of search bar -->
+      <div class="card-s col-9">
+          <h3 class="card-header text-uppercase">Video Resources</h3>
+          <iframe width="250" height="220"src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          </iframe>
+
+        </div>
+        
+      <!-- this is the code for the drop down bar -->
+            <section class="cardjb">
+              <h3 class="card-header text-uppercase">Job Postings</h3>
+                <div id="jobscontainer1"></div>
+                <div id="jobscontainer2"></div>
+                <div id="jobscontainer3"></div>
+            </section>
+
+      
+    </div>
+  </main>
+
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
+  
+</body>
+
+</html>
