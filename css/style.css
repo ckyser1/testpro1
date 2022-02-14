@@ -248,7 +248,8 @@
     border: 3px solid var(--light-dark);
     border-radius: var(--border-radius);
     margin: 5px;
-    color: var(--light-dark);
+    color: var(--primary);
+    background-color: var(--tertiary);
   }
   
   .cardyt {
